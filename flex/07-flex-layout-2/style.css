@@ -26,3 +26,75 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* solution*/
+
+a {
+  text-decoration: none;
+  color: white;
+  /* font-weight: 600; use font size and px like a normal person*/
+}
+
+li {
+  margin-bottom: 16px; /* adds gap between the links */
+}
+
+ul {
+  list-style-type: none;
+  /* display: flex;
+  flex-direction: column; */
+  /* gap: 16px;
+  padding: 0 8px; all useless */
+  margin: 0;
+  padding: 0; /* these 2 move the links to the top left of the container they're in*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; did not need*/ 
+}
+
+.header {
+  display: flex;
+  /* flex-direction: column; not needed*/
+  font-weight: 800;
+  font-size: xx-large;
+  align-items: center; /* works because the body is set to column */
+  /* justify-content: center; */
+  padding: 0 16px;
+}
+
+.cheating {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex-shrink: 0; /* prevents shrinking NO SHIT */
+  padding: 16px; /* gives us space around the links */
+}
+
+.card {
+  padding: 16px; /* needed these instead of the ones in .cards */
+  margin: 16px;
+
+  width: 300px;
+}
+
+.cards {
+  display: flex;
+  /* gap: 16px; */
+  padding: 32px;
+  flex-wrap: wrap;
+}
+
+
+
+.footer {
+  /* text-align: center; use align-items*/
+  display: flex;
+  /* flex-direction: column; again not needed because we declared it already*/
+  justify-content: center;
+  align-items: center;
+}

@@ -25,3 +25,51 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* solution */
+
+a { /* remove underline from links */
+  text-decoration: none;
+  color: slategray;
+}
+
+ul {
+  list-style-type: none; /* remove dots */
+  margin: 0; /* didn't have this */
+}
+
+.header,.footer {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; wasn't needed should have checked*/
+  padding: 16px;
+}
+
+.footer {
+  background-color: lightgray;
+  /* margin-top: auto; not needed after flex in body? unsure */
+}
+
+.right-links,.left-links {
+  display: flex; /* these could have just been under ul above */
+  gap: 16px;
+  padding: 0; /* was 8 */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: auto; */
+  justify-content: center; /* needed these 2 */
+  flex: 1; /* try and remember what this does */
+}
+
+body { /*thanks google. This got the content to the middle and footer to the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 8px 16px; /* forgot 16px which extends width*/
+}

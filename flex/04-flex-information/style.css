@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; /* this is why you didn't need the flex in .title*/
 }
 
 img {
@@ -10,6 +11,22 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px; /* gives the title butt room */
+  /* display: flex;
+  justify-content: center; didn't need */
+}
+
+.plants {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* align-content is used for multi-line flexboxes this is a single line*/
+  gap: 52px;
+}
+
+.plants2 {
+  /* display: flex;
+  flex-direction: column; didn't need*/
+  max-width: 200px; /* sets width for containers use background color to check*/
 }
 
 /* do not edit this footer */
